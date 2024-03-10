@@ -1,0 +1,20 @@
+import requests
+import json
+
+url = "https://gorest.co.in/public/v2/users"
+
+payload = json.dumps({
+  "email": "alisofyan500@torphy-goyette.example",
+  "name": "ali Bhilangana Ahluwalia",
+  "gender": "female",
+  "status": "active",
+  "id": 6752398
+})
+headers = {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer d8b18be4fddad9933f8f301df848a05ce68eeac9cd6215ac765798960b06d371'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
