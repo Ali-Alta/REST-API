@@ -1,0 +1,24 @@
+{
+	"info": {
+		"_postman_id": "72fe2d8a-272c-450c-a6c9-a0ec78dce617",
+		"name": "GOREST API 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33236916"
+	},
+	"item": [
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "get all users",
+					"host": [
+						"get all users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
