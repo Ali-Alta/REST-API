@@ -1,0 +1,12 @@
+import requests
+
+url = "https://gorest.co.in/public/v2/users"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer d8b18be4fddad9933f8f301df848a05ce68eeac9cd6215ac765798960b06d371'
+}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
